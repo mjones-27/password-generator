@@ -13,10 +13,10 @@ function generatePassword(numbers) {
   var lowers = "abcdefghijklmnopqrstuvwxyz";
   var uppers = lowers.toUpperCase();
   var specials = "!$%^&*()-=+[]{};#:@~,./<>?";   // space has been removed as it is not a valid password character choice
-  var numberArr = numbers.split("");
-  var lowerArr = lowers.split("");
-  var upperArr = uppers.split("");
-  var specialArr = specials.split("");
+  // var numberArr = numbers.split("");
+  // var lowerArr = lowers.split("");
+  // var upperArr = uppers.split("");
+  // var specialArr = specials.split("");
   var tmpPwd = "";
   var newPassword = "";
   var pwdLength = -1;
