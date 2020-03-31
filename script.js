@@ -1,8 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
-function writePassword() {
+function writePassword() {                                    // Write password to the #password input
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
@@ -12,11 +11,7 @@ function generatePassword(numbers) {
   var numbers = "0123456789";
   var lowers = "abcdefghijklmnopqrstuvwxyz";
   var uppers = lowers.toUpperCase();
-  var specials = "!$%^&*()-=+[]{};#:@~,./<>?";   // space has been removed as it is not a valid password character choice
-  // var numberArr = numbers.split("");
-  // var lowerArr = lowers.split("");
-  // var upperArr = uppers.split("");
-  // var specialArr = specials.split("");
+  var specials = "!$%^&*()-=+[]{};#:@~,./<>?";                // space has been removed as it is not a valid password character choice
   var tmpPwd = "";
   var newPassword = "";
   var pwdLength = -1;
@@ -50,8 +45,7 @@ function generatePassword(numbers) {
     newPassword = newPassword + passwordArr[r];
     console.log (r);
     }
-  }
-  else {
+  } else {
     alert("Password must contain valid characters!");
   }
 
